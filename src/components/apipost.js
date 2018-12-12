@@ -20,7 +20,7 @@ handleSubmit(event) {
     event.preventDefault();
     let title = this.state.title;
     let rating = this.state.rating;
-    fetch("http://localhost:5000/movies/input", {
+    fetch("https://chinita-8257.herokuapp.com/", {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
